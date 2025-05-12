@@ -5,7 +5,7 @@
     --tetriary-bg-color: #242730;
     --primary-color: #FFFFFF;
     --secondary-color: #808191;
-    --tetriary-color: #B7B9D2;
+    --tetriary-color: rgba(183,185,210,1.0);
     --primary-radius: 10px;
     /* night mode */
     --light: #f1f1f1;
