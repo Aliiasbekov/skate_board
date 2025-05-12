@@ -1,0 +1,397 @@
+/* Global styles */
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* max-height: 100vh; */
+    font-family: var(--primary-ff);
+    background-color: var(--primary-bg-color);
+}
+
+.container{
+    width: 95vw;
+    margin: 0 auto; 
+}
+
+a, a:active {
+    color: var(--secondary-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button{
+    cursor: pointer;
+}
+
+/* Header style */
+
+header{
+    padding: 22px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+header h2{
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+}
+
+.form_container {
+    display: flex;
+    opacity: 10%;
+
+}
+.form_container input{
+    border: none;
+    border-radius: var(--primary-radius) 0 0 var(--primary-radius);
+    font-size: 12px;
+    font-weight: normal;
+    min-width: 500px;
+}
+.form_container button{
+    border: none;
+    border-radius: 0 var(--primary-radius) var(--primary-radius) 0;
+    font-size: 12px;
+    padding: 10px 20px;
+    font-weight: normal;
+}
+
+header .account{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--primary-color);
+}
+
+.account img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.account img:first-child{
+    width: 50px;
+    height: 50px;
+    border-radius: 50% 50% 0 0;
+}
+
+
+/* menu container */
+
+.menu_container{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    padding: 0;
+}
+
+.menu_nav{
+    max-width: 148px;
+    color: var(--secondary-color);
+}
+
+.menu_nav hr{
+    margin: 48px 0 48px 0;
+}
+
+.nav_name{
+    font-size: 11px;
+    font-weight: 600;
+    opacity: 50%;
+}
+.discover_emblem p{
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.emblem{
+    font-weight: 400;
+}
+
+.discover_emblem, .emblem{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+.discover_emblem img, .emblem img{
+    width: 42px;
+    height: 42px;
+}
+
+.night_mode{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.night_mode p{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+}
+
+/* Скрытие стандартного чекбокса */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Ползунок */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 26px;
+}
+
+/* Круглый индикатор внутри */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+/* При включении */
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(24px);
+}
+
+
+.chapter_container{
+    color: var(--primary-color);
+    margin-bottom: 61px;
+}
+
+.chapter_container h2{
+    margin: 0;
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 28px;
+}
+.main_content{
+    min-height: 450px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 21px;
+    margin-bottom: 61px;
+}
+
+.main_content .biggest_content{
+    background-image: url(/assets/sky_skateboard.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--primary-radius);
+    padding: 40px 0 0 40px;
+    grid-column: 1 / 3;
+}
+
+.personal_data h5{
+    font-weight: 500;
+    font-size: 15px;
+}
+.personal_data p{
+    font-size: 12px;
+    font-weight: normal;
+}
+.biggest_content h3{
+    font-size: 30px;
+    font-weight: 600;
+    max-width: 230px;
+    margin-bottom: 30px;
+}
+.biggest_content .personal_data{
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.biggest_content .personal_data img{
+    width: 60px;
+    height: 60px;
+    border: 50%;
+}
+
+
+.main_content .secondary_content{
+    background-image: url(/assets/sunset_skateboard.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--primary-radius);
+    padding: 40px 0 0 40px;
+    grid-column: 3;
+}
+.secondary_content h3{
+    max-width: 230px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+
+/* .subchapter_container */
+
+.subchapter_container h2{
+    color: var(--primary-color);
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 28px;
+}
+
+.card_content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 21px;
+    margin-bottom: 100px;
+}
+
+
+
+.card{
+    max-height: 310px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+
+.card_image{
+    background-image: url(/assets/first_card.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--primary-radius) var(--primary-radius) 0 0;
+    min-height: 160px;
+    padding: 10px;
+}
+
+.card_image span{
+    background-color: var(--tetriary-bg-color);
+    opacity: 50%;
+    color: var(--primary-color);
+    border-radius: var(--primary-radius);
+    font-size: 10px;
+    font-weight: 500;
+    float: right;
+}
+
+.card_image img{
+    position: relative;
+    top: 135px;
+    right: -240px;
+}
+
+.card_info{
+    background-color: var(--tetriary-bg-color);
+    border-radius: 0 0 var(--primary-radius) var(--primary-radius);
+    padding: 0 0 24px 20px;
+    max-height: 160px;
+    text-align: left;
+}
+
+
+.card_info h6{
+    color: var(--tetriary-color);
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 13px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.card_info h6 span{
+    color: green;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.card_info p:nth-child(2){
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    max-width: 210px;
+    margin-bottom: 16px;
+}
+.card_info p:nth-child(3){
+    color: var(--tetriary-color);
+    font-size: 12px;
+    font-weight: normal;
+}
+
+
+ .card_2 .card_image{
+    background-image: url(/assets/second_card.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--primary-radius) var(--primary-radius) 0 0;
+    min-height: 160px;
+    padding: 10px;
+}
+.card_2 .card_info h6 span{
+    color: orangered;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.card_3 .card_image{
+    background-image: url(/assets/third_card.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--primary-radius) var(--primary-radius) 0 0;
+    min-height: 160px;
+    padding: 10px;
+}
+
+.card_3 .card_info h6 span{
+    color: orangered;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.card_4 .card_image{
+    background-image: url(/assets/fourth_card.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--primary-radius) var(--primary-radius) 0 0;
+    min-height: 160px;
+    padding: 10px;
+}
+.card_4 .card_info h6 span{
+    color: green;
+    font-weight: 900;
+    font-size: 20px;
+}

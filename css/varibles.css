@@ -1,0 +1,13 @@
+:root{
+    --primary-ff: "Poppins", sans-serif;
+    --primary-bg-color: #1F1D2B;
+    --secondary-bg-color: #808191;
+    --tetriary-bg-color: #242730;
+    --primary-color: #FFFFFF;
+    --secondary-color: #808191;
+    --tetriary-color: #B7B9D2;
+    --primary-radius: 10px;
+    /* night mode */
+    --light: #f1f1f1;
+    --label: #111; 
+}
