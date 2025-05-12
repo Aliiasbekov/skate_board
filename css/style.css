@@ -93,6 +93,15 @@ header .account{
     color: var(--secondary-color);
 }
 
+.menu_nav p{
+    transition: 1s; /* Время эффекта */
+    text-align: center;
+}
+
+.menu_nav p:hover {
+  transform: scale(1.2); /* Увеличиваем масштаб */
+}
+
 .menu_nav hr{
     margin: 48px 0 48px 0;
 }
